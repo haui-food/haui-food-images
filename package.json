@@ -1,7 +1,7 @@
 {
-  "name": "haui-food-cdn",
+  "name": "haui-food-image",
   "version": "1.0.0",
-  "description": "Service cdn for HaUI Food",
+  "description": "Service image for HaUI Food",
   "main": "./src/server.js",
   "dependencies": {
     "asynckit": "^0.4.0",
@@ -9,21 +9,27 @@
     "combined-stream": "^1.0.8",
     "daemon": "^1.1.0",
     "delayed-stream": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "follow-redirects": "^1.15.6",
     "form-data": "^4.0.0",
-    "init": "^0.1.2",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
+    "nodemon": "^3.1.0",
     "proxy-from-env": "^1.1.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pro": "node ./src/server.js",
+    "format": "prettier --write 'src/**/*.{js,json}'",
+    "start": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/haui-food/haui-food-cdn"
+    "url": "github.com/haui-food/haui-food-image"
   },
   "author": "hauifood.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
 }
