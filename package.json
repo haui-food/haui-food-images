@@ -7,16 +7,22 @@
     "asynckit": "^0.4.0",
     "axios": "^1.6.8",
     "combined-stream": "^1.0.8",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "daemon": "^1.1.0",
     "delayed-stream": "^1.0.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
     "follow-redirects": "^1.15.6",
     "form-data": "^4.0.0",
+    "http-status": "^1.7.4",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.0",
-    "proxy-from-env": "^1.1.0"
+    "proxy-from-env": "^1.1.0",
+    "xss-clean": "^0.1.4"
   },
   "scripts": {
     "pro": "node ./src/server.js",
